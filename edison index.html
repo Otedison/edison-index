@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edison Otieno | Designer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 1s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-tr from-gray-900 to-black text-white transition duration-500">
+
+<!-- Header -->
+<header class="fixed top-0 w-full flex justify-between items-center px-8 py-4 bg-black bg-opacity-70 backdrop-blur-lg z-50">
+  <h1 class="text-2xl font-bold text-yellow-400">Edison Otieno</h1>
+  <nav class="flex items-center space-x-6">
+    <a href="#about" class="hover:text-yellow-300">About</a>
+    <a href="#skills" class="hover:text-yellow-300">Skills</a>
+    <a href="#portfolio" class="hover:text-yellow-300">Portfolio</a>
+    <a href="#contact" class="hover:text-yellow-300">Contact</a>
+    <button id="toggleTheme" title="Toggle theme" class="text-yellow-400 hover:text-yellow-200">
+      <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path id="iconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 3v1m0 16v1m8.66-12.34l-.71.71M4.05 4.05l-.71.71M21 12h-1M4 12H3m16.24 4.95l-.71-.71M4.05 19.95l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+    </button>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="h-screen flex items-center justify-center bg-cover bg-center text-center relative"
+  style="background-image: url('assets/hero-bg.jpg');">
+  <div class="bg-black bg-opacity-60 p-10 rounded-xl flex flex-col items-center">
+    <img 
+      src="https://kreativecreations.co.ke/wp-content/uploads/2025/04/tutu-removebg-preview.png" 
+      alt="Hero Illustration" 
+      class="w-48 md:w-64 lg:w-72 mb-6 animate-fade-in"
+      data-aos="zoom-in"
+    />
+    <h2 class="text-5xl font-bold mb-4" data-aos="fade-up">Designing Visual Impact</h2>
+    <p class="text-lg mb-6 text-gray-300" data-aos="fade-up" data-aos-delay="200">
+      I'm Edison — crafting web & graphic masterpieces for global brands.
+    </p>
+    <a href="#portfolio" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">Explore Work</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-24 px-6 max-w-5xl mx-auto text-center">
+  <h3 class="text-4xl font-bold mb-6" data-aos="fade-up">About Me</h3>
+  <p class="text-gray-300 text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+    I’m a multidisciplinary creative who bridges the gap between technology and business through impactful digital experiences. With over 5 years of experience in UI/UX, branding, and digital marketing, I specialize in designing and developing high-performing websites that not only look stunning but also drive results. From strategy and design to performance optimization and SEO, I build solutions that elevate brands and deliver measurable growth.
+  </p>
+  <a href="assets/Edison_Otieno_CV.pdf" download class="mt-8 inline-block bg-yellow-400 text-black px-6 py-3 rounded hover:bg-yellow-300">Download Resume</a>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-24 px-6 max-w-5xl mx-auto text-center bg-gray-900">
+  <h3 class="text-4xl font-bold mb-6" data-aos="fade-up">My Skills</h3>
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+      <h4 class="text-2xl font-semibold text-yellow-400 mb-2">Web Design</h4>
+      <p class="text-gray-300">UI/UX design with a focus on creating beautiful, user-centric designs for seamless browsing experiences. Expertise in responsive design, prototyping, and wireframing.</p>
+    </div>
+    <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+      <h4 class="text-2xl font-semibold text-yellow-400 mb-2">Graphic Design</h4>
+      <p class="text-gray-300">Creating visually compelling brand identities, logos, marketing collateral, and print materials. Proficient in Adobe Illustrator, Photoshop, and InDesign.</p>
+    </div>
+    <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+      <h4 class="text-2xl font-semibold text-yellow-400 mb-2">Web Development</h4>
+      <p class="text-gray-300">Building interactive and dynamic websites using HTML, CSS, JavaScript, React, and PHP. Passionate about optimizing performance and usability.</p>
+    </div>
+    <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+      <h4 class="text-2xl font-semibold text-yellow-400 mb-2">Tech Stack</h4>
+      <p class="text-gray-300">Experienced with frameworks and libraries like Tailwind CSS, Bootstrap, and React. Backend skills with MySQL and PHP. Constantly exploring new tools to stay ahead of design and tech trends.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="bg-gray-900 py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-4xl font-bold text-center mb-10" data-aos="fade-up">Latest Work</h3>
+    <div class="text-center mb-10">
+      <button class="filter-btn px-4 py-2 bg-yellow-400 rounded-full mx-1" data-filter="all">All</button>
+      <button class="filter-btn px-4 py-2 bg-gray-700 rounded-full mx-1" data-filter="web">Web</button>
+      <button class="filter-btn px-4 py-2 bg-gray-700 rounded-full mx-1" data-filter="graphic">Graphic</button>
+    </div>
+
+    <div id="portfolio-grid" class="grid md:grid-cols-3 gap-8">
+      <div class="project-item" data-category="web" data-aos="zoom-in">
+        <div class="backdrop-blur-lg bg-white bg-opacity-10 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform">
+          <img src="https://kreativecreations.co.ke/wp-content/uploads/2025/04/MANIBELT-COMPANY-PROFILE.png" class="rounded-md mb-4" alt="Company profile" />
+          <h4 class="text-xl font-semibold text-white">Company profile</h4>
+          <p class="text-gray-300"> concise company profile effectively communicates your core business, target audience, key achievements, and overall mission, providing a snapshot of who you are and what you offer..</p>
+        </div>
+      </div>
+
+      <div class="project-item" data-category="graphic" data-aos="zoom-in" data-aos-delay="100">
+        <div class="backdrop-blur-lg bg-white bg-opacity-10 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform">
+          <img src="https://kreativecreations.co.ke/wp-content/uploads/2025/05/Hoodie_Mockup-scaled.jpg" class="rounded-md mb-4" alt="Brand Kit" />
+          <h4 class="text-xl font-semibold text-white">Brand Kit</h4>
+          <p class="text-gray-300">Full brand identity and logo set for fashion label.</p>
+        </div>
+      </div>
+
+      <div class="project-item" data-category="web" data-aos="zoom-in" data-aos-delay="200">
+        <div class="backdrop-blur-lg bg-white bg-opacity-10 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform">
+          <img src="https://kreativecreations.co.ke/wp-content/uploads/2025/04/tw.png" class="rounded-md mb-4" alt="Project 3" />
+          <h4 class="text-xl font-semibold text-white">Kindergaten and Primary website </h4>
+          <p class="text-gray-300">Complete website overhaul with SEO and optimization for a tech brand.</p>
+        </div>
+      </div>
+
+      <div class="project-item" data-category="graphic" data-aos="zoom-in" data-aos-delay="300">
+        <div class="backdrop-blur-lg bg-white bg-opacity-10 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform">
+          <img src="https://kreativecreations.co.ke/wp-content/uploads/2025/04/corn.png" class="rounded-md mb-4" alt="Project 4" />
+          <h4 class="text-xl font-semibold text-white">Real estate Website</h4>
+          <p class="text-gray-300">Real estate encompasses the buying, selling, renting, and management of land and buildings, playing a crucial role in economic development and individual wealth creation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-800 py-20 px-6 text-center">
+  <h3 class="text-4xl font-bold mb-6" data-aos="fade-down">Contact Me</h3>
+  <p class="text-gray-300 mb-8" data-aos="fade-up">Let’s work together to bring your vision to life.</p>
+  <form class="max-w-3xl mx-auto grid gap-6 md:grid-cols-2" data-aos="fade-up">
+    <input type="text" placeholder="Your Name" required class="p-4 bg-gray-700 rounded" />
+    <input type="email" placeholder="Your Email" required class="p-4 bg-gray-700 rounded" />
+    <textarea rows="5" placeholder="Your Message" class="md:col-span-2 p-4 bg-gray-700 rounded"></textarea>
+    <button class="md:col-span-2 bg-yellow-400 text-black py-3 rounded hover:bg-yellow-300">Send Message</button>
+  </form>
+  <p class="mt-6 text-yellow-400">
+    Or reach out directly: <a href="mailto:edisonneddy@gmail.com" class="hover:text-yellow-300">edisonneddy@gmail.com</a>
+  </p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black py-6 text-center text-gray-500 text-sm">
+  © 2025 Edison Otieno. All rights reserved.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+  AOS.init();
+  gsap.from("header", { y: -80, opacity: 0, duration: 1 });
+</script>
+
+</body>
+</html>
